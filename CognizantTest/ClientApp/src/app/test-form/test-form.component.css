@@ -1,0 +1,23 @@
+.editorPanel {
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+  .editorPanel .customMonacoEditor { /*set automaticLayout*/
+    height: calc(100vh - 0px);
+  }
+
+.code-editor {
+  border-width: 1px;
+  border-color: darkgray;
+  border-style: solid;
+  border-radius: 2px;
+}
+
+.row {
+  margin-top: 5px;
+}

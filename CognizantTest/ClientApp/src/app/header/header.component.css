@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #2799FA;
+  border-color: #478BC4;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: #ffffff;
+  font-size: larger;
+  margin: 10px;
+}
+
+.right-section {
+  float: right;
+}

@@ -1,0 +1,46 @@
+<form [formGroup]="testForm" (ngSubmit)="onSubmit()">
+  <div class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <label>NAME</label>
+        </div>
+        <div class="col-5">
+          <input pInputText formControlName="name" placeholder="Your name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <label>SELECT TASK</label>
+        </div>
+        <div class="col-5">
+          <p-dropdown [options]="tasks" formControlName="task" optionLabel="name"></p-dropdown>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <label>DESCRIPTION</label>
+        </div>
+        <div class="col-5">
+          {{selectedTask?.description}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <label>SOLUTION CODE</label>
+        </div>
+        <div class="col-10">
+          <div class="code-editor">
+            <ngx-monaco-editor [options]="editorOptions" formControlName="code"></ngx-monaco-editor>
+          </div><button type="submit" class="btn btn-primary">SUBMIT</button>
+          <div class="output-pane">
+            <p>{{outputMessage}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

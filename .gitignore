@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CognizantTest
+/CognizantTest.Compiler/bin/Debug/net5.0
+/CognizantTest.Compiler/obj
+/CognizantTest.Data/bin/Debug/net5.0
+/CognizantTest.Data/obj
+/CognizantTest.Services/bin/Debug/net5.0
+/CognizantTest.Services/obj
